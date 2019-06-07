@@ -29,9 +29,18 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+PropTypes are used for typechecking the properties on our application. This ensures whichever prop we pass down is the type of data we expect.
+It's important we typecheck in JavaScript mainly because it is a loosely typed language - that is it does not check types it receives and assumes or converts variables as it deems fit. 
 - [ ] Describe a life-cycle event in React?
+Life-cycles in React are various stages an app/website goes through from when the user loads it, interacts with it and eventually close it.
+An example of a life cycle event in React is `componentDidUpdate`. This lifecylce is called whenever a slice of state in the React app is changed. The `componentDidUpdate` lifecycle is the ideal place to update the state of an up when the user interacts with it without refreshing or reloading the app. It is one of the lifecycles that truely helps to build Single-Page-Applications(SPA)
 - [ ] Explain the details of a Higher Order Component?
+HOCs make it possible for developers to reuse the logic of a component across the application. 
+It receives a Component(or more) as argument(s) and returns a new component. I can refer to this as giving our components super-powers or putting them on steroids!
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+1. Using raw CSS - We get to use raw CSS and get all the benefits(auto-complete etc).
+2. ReactStrap - Already made styles or components based on BootStrap. It is a quick way to style your application without doing a 'lot of work'.
+3. styled-components - Makes components(styled) readable. Gives us the ability to use JavaScript to play around in CSS!
 
 ## Project Setup
 
